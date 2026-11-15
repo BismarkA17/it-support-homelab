@@ -1,12 +1,11 @@
 # Company profile
 
-TODO: pick a fictional company name (not a real business).
 
 | Item | Value |
 | --- | --- |
-| Company name | TODO |
-| Domain | TODO, e.g. corp.companyname.local |
-| Industry | TODO |
+| Company name | Xotic Inc |
+| Domain | TODO, e.g. corp.Xotic.local |
+| Industry | Logistics |
 | Staff | 50 |
 | Office | London (single site) |
 
