@@ -1,0 +1,20 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+.terraform.lock.hcl
+
+# Secrets and connection files
+*.pem
+*.pfx
+*.rdp
+*.env
+secrets/
+passwords*.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
