@@ -4,7 +4,7 @@
 | Item | Value |
 | --- | --- |
 | Company name | Xotic Inc |
-| Domain | TODO, e.g. corp.Xotic.local |
+| Domain | corp.xotic.local |
 | Industry | Logistics |
 | Staff | 50 |
 | Office | London (single site) |

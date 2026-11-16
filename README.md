@@ -23,7 +23,7 @@ See [docs/company-profile.md](docs/company-profile.md) for the made-up organisat
 
 ## Progress
 
-- [ ] Stage 0: Setup (Azure account, budget alert, repo)
+- [x] Stage 0: Setup (Azure account, budget alert, repo)
 - [ ] Stage 1: Build the domain
 - [ ] Stage 2: Daily support work
 - [ ] Stage 3: Break and fix
@@ -51,7 +51,7 @@ Filled in as each stage is completed.
 
 ## Cost controls
 
-- Budget alert at £15 on the lab's resource group
+- Budget alert at US$15/month (about £12) on the Azure account
 - Auto-shutdown at 23:00 on every VM
 - VMs stopped (deallocated) at the end of each session
 - From Stage 5, the lab is destroyed between sessions and rebuilt with Terraform
