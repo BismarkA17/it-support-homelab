@@ -37,6 +37,7 @@ See [docs/company-profile.md](docs/company-profile.md) for the made-up organisat
 docs/
   company-profile.md  the fictional company: departments, staff, locations
   build-log.md        what was done each session
+  how-the-lab-is-built.md  every build step explained
   tickets/            one file per support ticket
   runbooks/           step-by-step guides for common tasks and fixes
   kb/                 end-user knowledge-base articles
