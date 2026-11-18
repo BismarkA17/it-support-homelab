@@ -15,7 +15,7 @@ CLIENT_NAME="LAPTOP-001"
 ADMIN_USER="xoticadmin"
 DOMAIN="corp.xotic.local"
 NETBIOS="XOTIC"
-SIZE="${VM_SIZE:-Standard_B2s}"     # override with: VM_SIZE=Standard_B2ms bash deploy-lab.sh
+SIZE="${VM_SIZE:-Standard_B2ms}"    # Standard_B2s ran out of capacity in UK South (Nov 2026); override with VM_SIZE=...
 IMAGE="Win2022Datacenter"
 
 echo "== Xotic Inc lab build =="
@@ -25,6 +25,10 @@ echo "Avoid single quotes. You'll use this to log in, so store it in a password 
 read -rsp "Admin password: " ADMIN_PW; echo
 read -rsp "Confirm password: " ADMIN_PW2; echo
 [[ "$ADMIN_PW" == "$ADMIN_PW2" ]] || { echo "Passwords don't match."; exit 1; }
+
+echo "-> Registering Azure services (first run on a new subscription)"
+az provider register -n Microsoft.Compute --wait
+az provider register -n Microsoft.Network --wait
 
 echo "-> Checking vCPU quota (need 4)"
 az vm list-usage --location "$LOCATION" -o table | grep -i "Total Regional vCPUs" || true
