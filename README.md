@@ -8,7 +8,7 @@ A simulated small-company IT environment built in Azure to practise first and se
 
 | Component | Purpose | Status |
 | --- | --- | --- |
-| Windows Server 2022 domain controller | Active Directory, DNS, Group Policy | Not started |
+| Windows Server 2022 domain controller | Active Directory, DNS, Group Policy | Built: 50 users, 5 OUs, lockout policy |
 | Windows 11 client | Domain-joined laptop used as a normal staff member | Not started |
 | File shares | Department shares with access through security groups | Not started |
 | Helpdesk | Ticket queue with priorities and SLAs | Not started |
